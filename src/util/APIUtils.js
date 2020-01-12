@@ -29,7 +29,7 @@ export function getCurrentUser() {
     }
 
     return request({
-        url: API_BASE_URL + "/user/me",
+        url: API_BASE_URL + "/user",
         method: 'GET'
     });
 }
@@ -44,7 +44,7 @@ export function login(loginRequest) {
 
 export function getPhotos() {
     return request({
-        url: API_BASE_URL + "/user/me/photos",
+        url: API_BASE_URL + "/facebook/albums",
         method: 'GET'
     });
 }
